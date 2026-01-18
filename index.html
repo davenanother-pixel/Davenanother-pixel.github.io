@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iräx Alphabet Translator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Iräx / ΙΡäΞ Alphabet</h1>
+        <p>English written in the Iräx Alphabet. Use the translator below!</p>
+    </header>
+
+    <main>
+        <!-- Translator Section -->
+        <section class="translator">
+            <h2>Live Translator</h2>
+            <textarea id="englishInput" placeholder="Type English here..."></textarea>
+            <button id="translateBtn">Translate → Iräx</button>
+            <textarea id="iraxOutput" placeholder="Iräx translation appears here..." readonly></textarea>
+        </section>
+
+        <!-- Alphabet Mapping -->
+        <section class="alphabet">
+            <h2>Alphabet Mapping</h2>
+            <table id="alphabetTable">
+                <thead>
+                    <tr><th>Iräx Symbol</th><th>English Letter</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <!-- Example Phrases -->
+        <section class="examples">
+            <h2>Example Phrases</h2>
+            <table>
+                <thead>
+                    <tr><th>English</th><th>Iräx Alphabet</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Hello</td><td>ΧэΛΛΟ</td></tr>
+                    <tr><td>How are you?</td><td>ΧΟУ äΡЭ ΥΟΥΞ?</td></tr>
+                    <tr><td>My name is…</td><td>ΜΥ НäΜЭ ΙС …</td></tr>
+                    <tr><td>Thank you</td><td>ΤΗЭΝΚ Υ</td></tr>
+                    <tr><td>Pronunciation of the language</td><td>ΠΡΟΝΟΥΝČΙäΤΙΟΝ ΟΦ ΤΗЭ ΛäНГУäГЭ НäΜЭ</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
