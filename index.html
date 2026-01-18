@@ -1,58 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Iräx Alphabet Translator</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Iräx Translator | davens.world</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="container">
-    <header>
-        <h1>Iräx / ΙΡäΞ Alphabet</h1>
-        <p>English written in the Iräx Alphabet. Translate live and copy your results!</p>
-        <button id="toggleDarkMode">Toggle Dark Mode</button>
-    </header>
+  <h1>Iräx / ΙΡäΞ Translator</h1>
 
-    <main>
-        <!-- Translator Section -->
-        <section class="translator">
-            <h2>Live Translator</h2>
-            <textarea id="englishInput" placeholder="Type English here..."></textarea>
-            <textarea id="iraxOutput" placeholder="Iräx translation appears here..." readonly></textarea>
-            <button id="copyBtn">Copy Translation</button>
-        </section>
+  <p>
+    Convert standard English text into the Iräx visual alphabet.
+    Letters are replaced directly. Numbers, punctuation, and spacing are preserved.
+  </p>
 
-        <!-- Alphabet Mapping -->
-        <section class="alphabet">
-            <h2>Alphabet Mapping</h2>
-            <table id="alphabetTable">
-                <thead>
-                    <tr><th>Iräx Symbol</th><th>English Letter</th></tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </section>
+  <form method="post" action="/cgi-bin/irax.pl">
+    <label for="input">English Text</label><br>
+    <textarea name="input" id="input" rows="6" cols="80"></textarea><br><br>
 
-        <!-- Example Phrases -->
-        <section class="examples">
-            <h2>Example Phrases</h2>
-            <table>
-                <thead>
-                    <tr><th>English</th><th>Iräx Alphabet</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Hello</td><td>ΧэΛΛΟ</td></tr>
-                    <tr><td>How are you?</td><td>ΧΟУ äΡЭ ΥΟΥΞ?</td></tr>
-                    <tr><td>My name is…</td><td>ΜΥ НäΜЭ ΙС …</td></tr>
-                    <tr><td>Thank you</td><td>ΤΗЭΝΚ Υ</td></tr>
-                    <tr><td>Pronunciation of the language</td><td>ΠΡΟΝΟΥΝČΙäΤΙΟΝ ΟΦ ΤΗЭ ΛäНГУäГЭ НäΜЭ</td></tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-</div>
+    <input type="submit" value="Translate to Iräx">
+  </form>
 
-<script src="script.js"></script>
+  <hr>
+
+  <h2>Translation Rules</h2>
+  <ul>
+    <li>Capitalization follows English usage</li>
+    <li>Q is represented by the digraph <strong>Кв</strong></li>
+    <li>Numbers and punctuation are unchanged</li>
+    <li>Iräx is visual only and not phonetic</li>
+  </ul>
+
+  <footer>
+    <p>© davens.world — Iräx / ΙΡäΞ</p>
+  </footer>
 </body>
 </html>
+
