@@ -1,3 +1,4 @@
+// Iräx alphabet mapping
 const alphabetMap = {
     'A':'Ä','a':'ä','B':'Б','b':'б','C':'Č','c':'č','D':'Đ','d':'đ',
     'E':'Э','e':'э','F':'Ф','f':'ф','G':'Г','g':'г','H':'Χ','h':'χ',
@@ -8,6 +9,7 @@ const alphabetMap = {
     'Y':'Й','y':'й','Z':'З','z':'з'
 };
 
+// Get elements
 const englishInput = document.getElementById('englishInput');
 const iraxOutput = document.getElementById('iraxOutput');
 const alphabetTableBody = document.querySelector('#alphabetTable tbody');
@@ -21,24 +23,26 @@ for (let [eng, irax] of Object.entries(alphabetMap)) {
     alphabetTableBody.appendChild(row);
 }
 
-// Translator function
+// Translation function
 function translateToIrax(text) {
-    return text.split('').map(c => alphabetMap[c] || c).join('');
+    return text.split('').map(char => alphabetMap[char] || char).join('');
 }
 
-// Live translation as you type
+// Live translation as user types
 englishInput.addEventListener('input', () => {
-    iraxOutput.value = translateToIrax(englishInput.value);
+    const text = englishInput.value;
+    iraxOutput.value = translateToIrax(text);
 });
 
-// Copy translation to clipboard
+// Copy translation
 copyBtn.addEventListener('click', () => {
-    iraxOutput.select();
-    document.execCommand('copy');
-    alert('Iräx translation copied!');
+    if (iraxOutput.value.trim() === '') return;
+    navigator.clipboard.writeText(iraxOutput.value)
+        .then(() => alert('Iräx translation copied!'))
+        .catch(() => alert('Failed to copy.'));
 });
 
-// Toggle dark mode
+// Dark mode toggle
 toggleDarkModeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });
