@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iraxAlphabet>
+  <letter english="A" irax="Ä"/>
+  <letter english="B" irax="Б"/>
+  <letter english="C" irax="Č"/>
+  <letter english="D" irax="Đ"/>
+  <letter english="E" irax="Э"/>
+  <letter english="F" irax="Ф"/>
+  <letter english="G" irax="Г"/>
+  <letter english="H" irax="Χ"/>
+  <letter english="I" irax="Ι"/>
+  <letter english="J" irax="Џ"/>
+  <letter english="K" irax="Κ"/>
+  <letter english="L" irax="Л"/>
+  <letter english="M" irax="Μ"/>
+  <letter english="N" irax="Н"/>
+  <letter english="O" irax="Ο"/>
+  <letter english="P" irax="П"/>
+  <letter english="Q" irax="Кв"/>
+  <letter english="R" irax="Р"/>
+  <letter english="S" irax="С"/>
+  <letter english="T" irax="Τ"/>
+  <letter english="U" irax="У"/>
+  <letter english="V" irax="В"/>
+  <letter english="W" irax="Ў"/>
+  <letter english="X" irax="Ξ"/>
+  <letter english="Y" irax="Й"/>
+  <letter english="Z" irax="З"/>
+</iraxAlphabet>
